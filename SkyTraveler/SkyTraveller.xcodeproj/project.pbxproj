@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF25DB4B1EC1FA6A00CAB5F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4A1EC1FA6A00CAB5F3 /* main.m */; };
+		FF25DB4E1EC1FA6A00CAB5F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */; };
+		FF25DB511EC1FA6A00CAB5F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */; };
+		FF25DB541EC1FA6A00CAB5F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF25DB521EC1FA6A00CAB5F3 /* Main.storyboard */; };
+		FF25DB561EC1FA6A00CAB5F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25DB551EC1FA6A00CAB5F3 /* Assets.xcassets */; };
+		FF25DB591EC1FA6A00CAB5F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF25DB571EC1FA6A00CAB5F3 /* LaunchScreen.storyboard */; };
+		FF25DB641EC1FA6A00CAB5F3 /* SkyTravelerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB631EC1FA6A00CAB5F3 /* SkyTravelerTests.m */; };
+		FF25DB6F1EC1FA6A00CAB5F3 /* SkyTravelerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB6E1EC1FA6A00CAB5F3 /* SkyTravelerUITests.m */; };
+		FF25DB881EC1FEDD00CAB5F3 /* WithLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB871EC1FEDD00CAB5F3 /* WithLineTextField.m */; };
+		FF25DB8B1EC21FA400CAB5F3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB8A1EC21FA400CAB5F3 /* LoginViewController.m */; };
+		FF25DB8E1EC2292300CAB5F3 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB8D1EC2292300CAB5F3 /* LoginViewModel.m */; };
+		FF25DB911EC2293800CAB5F3 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB901EC2293800CAB5F3 /* LoginModel.m */; };
+		FF25DB941EC2B7CE00CAB5F3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB931EC2B7CE00CAB5F3 /* RegisterViewController.m */; };
+		FF25DB971EC2B7E600CAB5F3 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB961EC2B7E600CAB5F3 /* RegisterViewModel.m */; };
+		FF25DB9A1EC2B7F800CAB5F3 /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB991EC2B7F800CAB5F3 /* RegisterModel.m */; };
+		FF25DBA61EC2BD6100CAB5F3 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DBA41EC2BD6100CAB5F3 /* NetworkManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF25DB601EC1FA6A00CAB5F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF25DB3E1EC1FA6A00CAB5F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF25DB451EC1FA6A00CAB5F3;
+			remoteInfo = SkyTraveler;
+		};
+		FF25DB6B1EC1FA6A00CAB5F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF25DB3E1EC1FA6A00CAB5F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF25DB451EC1FA6A00CAB5F3;
+			remoteInfo = SkyTraveler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF25DB461EC1FA6A00CAB5F3 /* SkyTraveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyTraveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF25DB4A1EC1FA6A00CAB5F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF25DB4C1EC1FA6A00CAB5F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF25DB4F1EC1FA6A00CAB5F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF25DB531EC1FA6A00CAB5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF25DB551EC1FA6A00CAB5F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF25DB581EC1FA6A00CAB5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF25DB5A1EC1FA6A00CAB5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF25DB5F1EC1FA6A00CAB5F3 /* SkyTravellerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyTravellerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF25DB631EC1FA6A00CAB5F3 /* SkyTravelerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyTravelerTests.m; sourceTree = "<group>"; };
+		FF25DB651EC1FA6A00CAB5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF25DB6A1EC1FA6A00CAB5F3 /* SkyTravellerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyTravellerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF25DB6E1EC1FA6A00CAB5F3 /* SkyTravelerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyTravelerUITests.m; sourceTree = "<group>"; };
+		FF25DB701EC1FA6A00CAB5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF25DB861EC1FEDD00CAB5F3 /* WithLineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithLineTextField.h; sourceTree = "<group>"; };
+		FF25DB871EC1FEDD00CAB5F3 /* WithLineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithLineTextField.m; sourceTree = "<group>"; };
+		FF25DB891EC21FA400CAB5F3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FF25DB8A1EC21FA400CAB5F3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FF25DB8C1EC2292300CAB5F3 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		FF25DB8D1EC2292300CAB5F3 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		FF25DB8F1EC2293800CAB5F3 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		FF25DB901EC2293800CAB5F3 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		FF25DB921EC2B7CE00CAB5F3 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FF25DB931EC2B7CE00CAB5F3 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FF25DB951EC2B7E600CAB5F3 /* RegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
+		FF25DB961EC2B7E600CAB5F3 /* RegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
+		FF25DB981EC2B7F800CAB5F3 /* RegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterModel.h; sourceTree = "<group>"; };
+		FF25DB991EC2B7F800CAB5F3 /* RegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterModel.m; sourceTree = "<group>"; };
+		FF25DBA31EC2BD6100CAB5F3 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		FF25DBA41EC2BD6100CAB5F3 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		FF25DBA51EC2BD6100CAB5F3 /* NetworkManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManagerDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF25DB431EC1FA6A00CAB5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25DB5C1EC1FA6A00CAB5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25DB671EC1FA6A00CAB5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF25DB3D1EC1FA6A00CAB5F3 = {
+			isa = PBXGroup;
+			children = (
+				FF25DB481EC1FA6A00CAB5F3 /* SkyTraveler */,
+				FF25DB621EC1FA6A00CAB5F3 /* SkyTravelerTests */,
+				FF25DB6D1EC1FA6A00CAB5F3 /* SkyTravelerUITests */,
+				FF25DB471EC1FA6A00CAB5F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF25DB471EC1FA6A00CAB5F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB461EC1FA6A00CAB5F3 /* SkyTraveller.app */,
+				FF25DB5F1EC1FA6A00CAB5F3 /* SkyTravellerTests.xctest */,
+				FF25DB6A1EC1FA6A00CAB5F3 /* SkyTravellerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF25DB481EC1FA6A00CAB5F3 /* SkyTraveler */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DBA11EC2BCAC00CAB5F3 /* Public */,
+				FF25DB9D1EC2B82800CAB5F3 /* OrderedTicket */,
+				FF25DB9B1EC2B81300CAB5F3 /* OrderTicket */,
+				FF25DB7C1EC1FB7400CAB5F3 /* LoginAndRegister */,
+				FF25DB4C1EC1FA6A00CAB5F3 /* AppDelegate.h */,
+				FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */,
+				FF25DB4F1EC1FA6A00CAB5F3 /* ViewController.h */,
+				FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */,
+				FF25DB521EC1FA6A00CAB5F3 /* Main.storyboard */,
+				FF25DB551EC1FA6A00CAB5F3 /* Assets.xcassets */,
+				FF25DB571EC1FA6A00CAB5F3 /* LaunchScreen.storyboard */,
+				FF25DB5A1EC1FA6A00CAB5F3 /* Info.plist */,
+				FF25DB491EC1FA6A00CAB5F3 /* Supporting Files */,
+			);
+			path = SkyTraveler;
+			sourceTree = "<group>";
+		};
+		FF25DB491EC1FA6A00CAB5F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB4A1EC1FA6A00CAB5F3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF25DB621EC1FA6A00CAB5F3 /* SkyTravelerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB631EC1FA6A00CAB5F3 /* SkyTravelerTests.m */,
+				FF25DB651EC1FA6A00CAB5F3 /* Info.plist */,
+			);
+			path = SkyTravelerTests;
+			sourceTree = "<group>";
+		};
+		FF25DB6D1EC1FA6A00CAB5F3 /* SkyTravelerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB6E1EC1FA6A00CAB5F3 /* SkyTravelerUITests.m */,
+				FF25DB701EC1FA6A00CAB5F3 /* Info.plist */,
+			);
+			path = SkyTravelerUITests;
+			sourceTree = "<group>";
+		};
+		FF25DB7C1EC1FB7400CAB5F3 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB7E1EC1FB9000CAB5F3 /* Register */,
+				FF25DB7D1EC1FB8000CAB5F3 /* Login */,
+			);
+			name = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		FF25DB7D1EC1FB8000CAB5F3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB841EC1FBB200CAB5F3 /* View */,
+				FF25DB831EC1FBAC00CAB5F3 /* ViewModel */,
+				FF25DB821EC1FBA800CAB5F3 /* Model */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FF25DB7E1EC1FB9000CAB5F3 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB811EC1FBA100CAB5F3 /* Model */,
+				FF25DB801EC1FB9A00CAB5F3 /* ViewModel */,
+				FF25DB7F1EC1FB9500CAB5F3 /* View */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		FF25DB7F1EC1FB9500CAB5F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB921EC2B7CE00CAB5F3 /* RegisterViewController.h */,
+				FF25DB931EC2B7CE00CAB5F3 /* RegisterViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF25DB801EC1FB9A00CAB5F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB951EC2B7E600CAB5F3 /* RegisterViewModel.h */,
+				FF25DB961EC2B7E600CAB5F3 /* RegisterViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF25DB811EC1FBA100CAB5F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB981EC2B7F800CAB5F3 /* RegisterModel.h */,
+				FF25DB991EC2B7F800CAB5F3 /* RegisterModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF25DB821EC1FBA800CAB5F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB8F1EC2293800CAB5F3 /* LoginModel.h */,
+				FF25DB901EC2293800CAB5F3 /* LoginModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF25DB831EC1FBAC00CAB5F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB8C1EC2292300CAB5F3 /* LoginViewModel.h */,
+				FF25DB8D1EC2292300CAB5F3 /* LoginViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF25DB841EC1FBB200CAB5F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB891EC21FA400CAB5F3 /* LoginViewController.h */,
+				FF25DB8A1EC21FA400CAB5F3 /* LoginViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF25DB851EC1FEAE00CAB5F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DB861EC1FEDD00CAB5F3 /* WithLineTextField.h */,
+				FF25DB871EC1FEDD00CAB5F3 /* WithLineTextField.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF25DB9B1EC2B81300CAB5F3 /* OrderTicket */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DBA01EC2B85400CAB5F3 /* Complete */,
+				FF25DB9F1EC2B84200CAB5F3 /* Tickets */,
+				FF25DB9E1EC2B83B00CAB5F3 /* Search */,
+			);
+			name = OrderTicket;
+			sourceTree = "<group>";
+		};
+		FF25DB9D1EC2B82800CAB5F3 /* OrderedTicket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = OrderedTicket;
+			sourceTree = "<group>";
+		};
+		FF25DB9E1EC2B83B00CAB5F3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		FF25DB9F1EC2B84200CAB5F3 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tickets;
+			sourceTree = "<group>";
+		};
+		FF25DBA01EC2B85400CAB5F3 /* Complete */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Complete;
+			sourceTree = "<group>";
+		};
+		FF25DBA11EC2BCAC00CAB5F3 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DBA21EC2BCC300CAB5F3 /* Model */,
+				FF25DB851EC1FEAE00CAB5F3 /* View */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		FF25DBA21EC2BCC300CAB5F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DBA71EC2BD6700CAB5F3 /* Network */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF25DBA71EC2BD6700CAB5F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FF25DBA31EC2BD6100CAB5F3 /* NetworkManager.h */,
+				FF25DBA41EC2BD6100CAB5F3 /* NetworkManager.m */,
+				FF25DBA51EC2BD6100CAB5F3 /* NetworkManagerDelegate.h */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF25DB451EC1FA6A00CAB5F3 /* SkyTraveller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF25DB731EC1FA6A00CAB5F3 /* Build configuration list for PBXNativeTarget "SkyTraveller" */;
+			buildPhases = (
+				FF25DB421EC1FA6A00CAB5F3 /* Sources */,
+				FF25DB431EC1FA6A00CAB5F3 /* Frameworks */,
+				FF25DB441EC1FA6A00CAB5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyTraveller;
+			productName = SkyTraveler;
+			productReference = FF25DB461EC1FA6A00CAB5F3 /* SkyTraveller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF25DB5E1EC1FA6A00CAB5F3 /* SkyTravellerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF25DB761EC1FA6A00CAB5F3 /* Build configuration list for PBXNativeTarget "SkyTravellerTests" */;
+			buildPhases = (
+				FF25DB5B1EC1FA6A00CAB5F3 /* Sources */,
+				FF25DB5C1EC1FA6A00CAB5F3 /* Frameworks */,
+				FF25DB5D1EC1FA6A00CAB5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF25DB611EC1FA6A00CAB5F3 /* PBXTargetDependency */,
+			);
+			name = SkyTravellerTests;
+			productName = SkyTravelerTests;
+			productReference = FF25DB5F1EC1FA6A00CAB5F3 /* SkyTravellerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF25DB691EC1FA6A00CAB5F3 /* SkyTravellerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF25DB791EC1FA6A00CAB5F3 /* Build configuration list for PBXNativeTarget "SkyTravellerUITests" */;
+			buildPhases = (
+				FF25DB661EC1FA6A00CAB5F3 /* Sources */,
+				FF25DB671EC1FA6A00CAB5F3 /* Frameworks */,
+				FF25DB681EC1FA6A00CAB5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF25DB6C1EC1FA6A00CAB5F3 /* PBXTargetDependency */,
+			);
+			name = SkyTravellerUITests;
+			productName = SkyTravelerUITests;
+			productReference = FF25DB6A1EC1FA6A00CAB5F3 /* SkyTravellerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF25DB3E1EC1FA6A00CAB5F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = chenzhesi;
+				TargetAttributes = {
+					FF25DB451EC1FA6A00CAB5F3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = B924RY6M34;
+						ProvisioningStyle = Automatic;
+					};
+					FF25DB5E1EC1FA6A00CAB5F3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = B924RY6M34;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF25DB451EC1FA6A00CAB5F3;
+					};
+					FF25DB691EC1FA6A00CAB5F3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = B924RY6M34;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF25DB451EC1FA6A00CAB5F3;
+					};
+				};
+			};
+			buildConfigurationList = FF25DB411EC1FA6A00CAB5F3 /* Build configuration list for PBXProject "SkyTraveller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF25DB3D1EC1FA6A00CAB5F3;
+			productRefGroup = FF25DB471EC1FA6A00CAB5F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF25DB451EC1FA6A00CAB5F3 /* SkyTraveller */,
+				FF25DB5E1EC1FA6A00CAB5F3 /* SkyTravellerTests */,
+				FF25DB691EC1FA6A00CAB5F3 /* SkyTravellerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF25DB441EC1FA6A00CAB5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25DB591EC1FA6A00CAB5F3 /* LaunchScreen.storyboard in Resources */,
+				FF25DB561EC1FA6A00CAB5F3 /* Assets.xcassets in Resources */,
+				FF25DB541EC1FA6A00CAB5F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25DB5D1EC1FA6A00CAB5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25DB681EC1FA6A00CAB5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF25DB421EC1FA6A00CAB5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25DB511EC1FA6A00CAB5F3 /* ViewController.m in Sources */,
+				FF25DB4E1EC1FA6A00CAB5F3 /* AppDelegate.m in Sources */,
+				FF25DB8E1EC2292300CAB5F3 /* LoginViewModel.m in Sources */,
+				FF25DBA61EC2BD6100CAB5F3 /* NetworkManager.m in Sources */,
+				FF25DB4B1EC1FA6A00CAB5F3 /* main.m in Sources */,
+				FF25DB9A1EC2B7F800CAB5F3 /* RegisterModel.m in Sources */,
+				FF25DB881EC1FEDD00CAB5F3 /* WithLineTextField.m in Sources */,
+				FF25DB8B1EC21FA400CAB5F3 /* LoginViewController.m in Sources */,
+				FF25DB971EC2B7E600CAB5F3 /* RegisterViewModel.m in Sources */,
+				FF25DB911EC2293800CAB5F3 /* LoginModel.m in Sources */,
+				FF25DB941EC2B7CE00CAB5F3 /* RegisterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25DB5B1EC1FA6A00CAB5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25DB641EC1FA6A00CAB5F3 /* SkyTravelerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25DB661EC1FA6A00CAB5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25DB6F1EC1FA6A00CAB5F3 /* SkyTravelerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF25DB611EC1FA6A00CAB5F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF25DB451EC1FA6A00CAB5F3 /* SkyTraveller */;
+			targetProxy = FF25DB601EC1FA6A00CAB5F3 /* PBXContainerItemProxy */;
+		};
+		FF25DB6C1EC1FA6A00CAB5F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF25DB451EC1FA6A00CAB5F3 /* SkyTraveller */;
+			targetProxy = FF25DB6B1EC1FA6A00CAB5F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF25DB521EC1FA6A00CAB5F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF25DB531EC1FA6A00CAB5F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF25DB571EC1FA6A00CAB5F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF25DB581EC1FA6A00CAB5F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF25DB711EC1FA6A00CAB5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF25DB721EC1FA6A00CAB5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF25DB741EC1FA6A00CAB5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B924RY6M34;
+				INFOPLIST_FILE = SkyTraveler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTraveller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF25DB751EC1FA6A00CAB5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B924RY6M34;
+				INFOPLIST_FILE = SkyTraveler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTraveller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF25DB771EC1FA6A00CAB5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B924RY6M34;
+				INFOPLIST_FILE = SkyTravelerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTravelerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyTraveller.app/SkyTraveller";
+			};
+			name = Debug;
+		};
+		FF25DB781EC1FA6A00CAB5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B924RY6M34;
+				INFOPLIST_FILE = SkyTravelerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTravelerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyTraveller.app/SkyTraveller";
+			};
+			name = Release;
+		};
+		FF25DB7A1EC1FA6A00CAB5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B924RY6M34;
+				INFOPLIST_FILE = SkyTravelerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTravelerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkyTraveler;
+			};
+			name = Debug;
+		};
+		FF25DB7B1EC1FA6A00CAB5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B924RY6M34;
+				INFOPLIST_FILE = SkyTravelerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTravelerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkyTraveler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF25DB411EC1FA6A00CAB5F3 /* Build configuration list for PBXProject "SkyTraveller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF25DB711EC1FA6A00CAB5F3 /* Debug */,
+				FF25DB721EC1FA6A00CAB5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF25DB731EC1FA6A00CAB5F3 /* Build configuration list for PBXNativeTarget "SkyTraveller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF25DB741EC1FA6A00CAB5F3 /* Debug */,
+				FF25DB751EC1FA6A00CAB5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF25DB761EC1FA6A00CAB5F3 /* Build configuration list for PBXNativeTarget "SkyTravellerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF25DB771EC1FA6A00CAB5F3 /* Debug */,
+				FF25DB781EC1FA6A00CAB5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF25DB791EC1FA6A00CAB5F3 /* Build configuration list for PBXNativeTarget "SkyTravellerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF25DB7A1EC1FA6A00CAB5F3 /* Debug */,
+				FF25DB7B1EC1FA6A00CAB5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF25DB3E1EC1FA6A00CAB5F3 /* Project object */;
+}
