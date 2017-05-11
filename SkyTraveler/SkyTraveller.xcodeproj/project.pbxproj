@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1ED3261EC40A8100E759DD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3251EC40A8100E759DD /* SearchViewController.m */; };
+		FF1ED32A1EC40A9800E759DD /* SearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3291EC40A9800E759DD /* SearchViewModel.m */; };
+		FF1ED32D1EC40AA600E759DD /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED32C1EC40AA600E759DD /* SearchModel.m */; };
+		FF1ED3331EC44BF100E759DD /* TicketsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3321EC44BF100E759DD /* TicketsTableViewController.m */; };
+		FF1ED3361EC44C0900E759DD /* TicketsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3351EC44C0900E759DD /* TicketsViewModel.m */; };
+		FF1ED3391EC44C1400E759DD /* TicketsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3381EC44C1400E759DD /* TicketsModel.m */; };
 		FF25DB4B1EC1FA6A00CAB5F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4A1EC1FA6A00CAB5F3 /* main.m */; };
 		FF25DB4E1EC1FA6A00CAB5F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */; };
 		FF25DB511EC1FA6A00CAB5F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */; };
@@ -23,6 +29,7 @@
 		FF25DB971EC2B7E600CAB5F3 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB961EC2B7E600CAB5F3 /* RegisterViewModel.m */; };
 		FF25DB9A1EC2B7F800CAB5F3 /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB991EC2B7F800CAB5F3 /* RegisterModel.m */; };
 		FF25DBA61EC2BD6100CAB5F3 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DBA41EC2BD6100CAB5F3 /* NetworkManager.m */; };
+		FF801E001EC30DAE00FB0891 /* ShowUpAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FF801DFF1EC30DAE00FB0891 /* ShowUpAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF1ED3241EC40A8100E759DD /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		FF1ED3251EC40A8100E759DD /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		FF1ED3281EC40A9800E759DD /* SearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewModel.h; sourceTree = "<group>"; };
+		FF1ED3291EC40A9800E759DD /* SearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewModel.m; sourceTree = "<group>"; };
+		FF1ED32B1EC40AA600E759DD /* SearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModel.h; sourceTree = "<group>"; };
+		FF1ED32C1EC40AA600E759DD /* SearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchModel.m; sourceTree = "<group>"; };
+		FF1ED3311EC44BF100E759DD /* TicketsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsTableViewController.h; sourceTree = "<group>"; };
+		FF1ED3321EC44BF100E759DD /* TicketsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsTableViewController.m; sourceTree = "<group>"; };
+		FF1ED3341EC44C0900E759DD /* TicketsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsViewModel.h; sourceTree = "<group>"; };
+		FF1ED3351EC44C0900E759DD /* TicketsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewModel.m; sourceTree = "<group>"; };
+		FF1ED3371EC44C1400E759DD /* TicketsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsModel.h; sourceTree = "<group>"; };
+		FF1ED3381EC44C1400E759DD /* TicketsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsModel.m; sourceTree = "<group>"; };
 		FF25DB461EC1FA6A00CAB5F3 /* SkyTraveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyTraveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF25DB4A1EC1FA6A00CAB5F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF25DB4C1EC1FA6A00CAB5F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +95,8 @@
 		FF25DBA31EC2BD6100CAB5F3 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		FF25DBA41EC2BD6100CAB5F3 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		FF25DBA51EC2BD6100CAB5F3 /* NetworkManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManagerDelegate.h; sourceTree = "<group>"; };
+		FF801DFE1EC30DAE00FB0891 /* ShowUpAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowUpAlert.h; sourceTree = "<group>"; };
+		FF801DFF1EC30DAE00FB0891 /* ShowUpAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowUpAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +124,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1ED3211EC40A4700E759DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3241EC40A8100E759DD /* SearchViewController.h */,
+				FF1ED3251EC40A8100E759DD /* SearchViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF1ED3221EC40A4C00E759DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED32B1EC40AA600E759DD /* SearchModel.h */,
+				FF1ED32C1EC40AA600E759DD /* SearchModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF1ED3231EC40A5200E759DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3281EC40A9800E759DD /* SearchViewModel.h */,
+				FF1ED3291EC40A9800E759DD /* SearchViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1ED32E1EC44BB500E759DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3311EC44BF100E759DD /* TicketsTableViewController.h */,
+				FF1ED3321EC44BF100E759DD /* TicketsTableViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF1ED32F1EC44BBB00E759DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3341EC44C0900E759DD /* TicketsViewModel.h */,
+				FF1ED3351EC44C0900E759DD /* TicketsViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1ED3301EC44BC400E759DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3371EC44C1400E759DD /* TicketsModel.h */,
+				FF1ED3381EC44C1400E759DD /* TicketsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FF25DB3D1EC1FA6A00CAB5F3 = {
 			isa = PBXGroup;
 			children = (
-				FF25DB481EC1FA6A00CAB5F3 /* SkyTraveler */,
-				FF25DB621EC1FA6A00CAB5F3 /* SkyTravelerTests */,
-				FF25DB6D1EC1FA6A00CAB5F3 /* SkyTravelerUITests */,
+				FF25DB481EC1FA6A00CAB5F3 /* SkyTraveller */,
+				FF25DB621EC1FA6A00CAB5F3 /* SkyTravellerTests */,
+				FF25DB6D1EC1FA6A00CAB5F3 /* SkyTravellerUITests */,
 				FF25DB471EC1FA6A00CAB5F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,7 +198,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF25DB481EC1FA6A00CAB5F3 /* SkyTraveler */ = {
+		FF25DB481EC1FA6A00CAB5F3 /* SkyTraveller */ = {
 			isa = PBXGroup;
 			children = (
 				FF25DBA11EC2BCAC00CAB5F3 /* Public */,
@@ -140,6 +215,7 @@
 				FF25DB5A1EC1FA6A00CAB5F3 /* Info.plist */,
 				FF25DB491EC1FA6A00CAB5F3 /* Supporting Files */,
 			);
+			name = SkyTraveller;
 			path = SkyTraveler;
 			sourceTree = "<group>";
 		};
@@ -151,27 +227,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FF25DB621EC1FA6A00CAB5F3 /* SkyTravelerTests */ = {
+		FF25DB621EC1FA6A00CAB5F3 /* SkyTravellerTests */ = {
 			isa = PBXGroup;
 			children = (
 				FF25DB631EC1FA6A00CAB5F3 /* SkyTravelerTests.m */,
 				FF25DB651EC1FA6A00CAB5F3 /* Info.plist */,
 			);
+			name = SkyTravellerTests;
 			path = SkyTravelerTests;
 			sourceTree = "<group>";
 		};
-		FF25DB6D1EC1FA6A00CAB5F3 /* SkyTravelerUITests */ = {
+		FF25DB6D1EC1FA6A00CAB5F3 /* SkyTravellerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				FF25DB6E1EC1FA6A00CAB5F3 /* SkyTravelerUITests.m */,
 				FF25DB701EC1FA6A00CAB5F3 /* Info.plist */,
 			);
+			name = SkyTravellerUITests;
 			path = SkyTravelerUITests;
 			sourceTree = "<group>";
 		};
 		FF25DB7C1EC1FB7400CAB5F3 /* LoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
+				FF801DFC1EC30BF900FB0891 /* Same */,
 				FF25DB7E1EC1FB9000CAB5F3 /* Register */,
 				FF25DB7D1EC1FB8000CAB5F3 /* Login */,
 			);
@@ -281,6 +360,9 @@
 		FF25DB9E1EC2B83B00CAB5F3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FF1ED3211EC40A4700E759DD /* View */,
+				FF1ED3231EC40A5200E759DD /* ViewModel */,
+				FF1ED3221EC40A4C00E759DD /* Model */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -288,6 +370,9 @@
 		FF25DB9F1EC2B84200CAB5F3 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				FF1ED3301EC44BC400E759DD /* Model */,
+				FF1ED32F1EC44BBB00E759DD /* ViewModel */,
+				FF1ED32E1EC44BB500E759DD /* View */,
 			);
 			name = Tickets;
 			sourceTree = "<group>";
@@ -324,6 +409,23 @@
 				FF25DBA51EC2BD6100CAB5F3 /* NetworkManagerDelegate.h */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		FF801DFC1EC30BF900FB0891 /* Same */ = {
+			isa = PBXGroup;
+			children = (
+				FF801DFD1EC30D8C00FB0891 /* View */,
+			);
+			name = Same;
+			sourceTree = "<group>";
+		};
+		FF801DFD1EC30D8C00FB0891 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF801DFE1EC30DAE00FB0891 /* ShowUpAlert.h */,
+				FF801DFF1EC30DAE00FB0891 /* ShowUpAlert.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,16 +565,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF25DB511EC1FA6A00CAB5F3 /* ViewController.m in Sources */,
+				FF1ED3261EC40A8100E759DD /* SearchViewController.m in Sources */,
 				FF25DB4E1EC1FA6A00CAB5F3 /* AppDelegate.m in Sources */,
 				FF25DB8E1EC2292300CAB5F3 /* LoginViewModel.m in Sources */,
 				FF25DBA61EC2BD6100CAB5F3 /* NetworkManager.m in Sources */,
+				FF1ED3331EC44BF100E759DD /* TicketsTableViewController.m in Sources */,
 				FF25DB4B1EC1FA6A00CAB5F3 /* main.m in Sources */,
 				FF25DB9A1EC2B7F800CAB5F3 /* RegisterModel.m in Sources */,
+				FF1ED3361EC44C0900E759DD /* TicketsViewModel.m in Sources */,
 				FF25DB881EC1FEDD00CAB5F3 /* WithLineTextField.m in Sources */,
+				FF1ED32D1EC40AA600E759DD /* SearchModel.m in Sources */,
 				FF25DB8B1EC21FA400CAB5F3 /* LoginViewController.m in Sources */,
 				FF25DB971EC2B7E600CAB5F3 /* RegisterViewModel.m in Sources */,
 				FF25DB911EC2293800CAB5F3 /* LoginModel.m in Sources */,
+				FF801E001EC30DAE00FB0891 /* ShowUpAlert.m in Sources */,
+				FF1ED32A1EC40A9800E759DD /* SearchViewModel.m in Sources */,
 				FF25DB941EC2B7CE00CAB5F3 /* RegisterViewController.m in Sources */,
+				FF1ED3391EC44C1400E759DD /* TicketsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

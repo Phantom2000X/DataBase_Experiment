@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RegisterModel.h"
 
 @interface RegisterViewModel : NSObject
+
+- (instancetype)initWithFailResultBlock:(void (^)(NSString *))frb successBlock:(void (^)(void))sb;
+- (void)registerWithUserName: (NSString *)usn withPassword: (NSString *)psw withComfirmPassword: (NSString *)cpsw;
 
 @end

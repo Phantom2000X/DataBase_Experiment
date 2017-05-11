@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WithLineTextField.h"
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController <UITextFieldDelegate>
 
 @end

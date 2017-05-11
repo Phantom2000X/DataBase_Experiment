@@ -10,6 +10,9 @@
 #import "NetworkManager.h"
 #import "NetworkManagerDelegate.h"
 
-@interface LoginModel : NSObject
+@interface LoginModel : NSObject <NetworkManagerDelegate>
+
+- (instancetype)initLoginModelWithResultBlock: (void(^)(BOOL, NSString *))rb;
+- (void)loginWithUserName: (NSString *)usn withPassword: (NSString *)psw;
 
 @end

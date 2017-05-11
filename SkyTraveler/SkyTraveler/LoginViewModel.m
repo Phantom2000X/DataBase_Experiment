@@ -10,22 +10,36 @@
 
 @implementation LoginViewModel
 {
-    void (^loginningBlock)(void);
     void (^failResultBlock)(NSString *);
     void (^successBlock)(void);
+    LoginModel *loginModel;
 }
 
-- (instancetype)initWithLoginningBlock:(void (^)(void))lgb failResultBlock:(void (^)(NSString *))frb successBlock:(void (^)(void))sb{
+- (instancetype)initWithFailResultBlock:(void (^)(NSString *))frb successBlock:(void (^)(void))sb{
     if (self = [super init]) {
-        loginningBlock = lgb;
         failResultBlock = frb;
         successBlock = sb;
+        loginModel = [[LoginModel alloc] initLoginModelWithResultBlock:^(BOOL isSuccess, NSString *rs) {
+            [self executeResuletWithIsSuccess:isSuccess withResult:rs];
+        }];
     }
     return self;
 }
 
 - (void)loginWithUserName: (NSString *)usn withPassword: (NSString *)psw {
-    
+    if ([usn length] == 0 || [usn length] > 12 || [psw length] < 6 || [psw length] > 12)  {
+        failResultBlock(@"用户名不能为空或大于12位，密码不能小于6位或大于12位");
+        return;
+    }
+    [loginModel loginWithUserName:usn withPassword:psw];
 }
 
+- (void)executeResuletWithIsSuccess: (BOOL) isc withResult: (NSString *)rs {
+    if (isc) {
+        successBlock();
+    } else {
+        failResultBlock(rs);
+    }
+}
+                      
 @end

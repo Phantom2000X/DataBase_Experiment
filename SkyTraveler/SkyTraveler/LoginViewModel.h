@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LoginModel.h"
 
 @interface LoginViewModel : NSObject
 
-- (instancetype)initWithLoginningBlock:(void (^)(void))lgb failResultBlock:(void (^)(NSString *))frb successBlock:(void (^)(void))sb;
+- (instancetype)initWithFailResultBlock:(void (^)(NSString *))frb successBlock:(void (^)(void))sb;
+- (void)loginWithUserName: (NSString *)usn withPassword: (NSString *)psw;
 
 @end

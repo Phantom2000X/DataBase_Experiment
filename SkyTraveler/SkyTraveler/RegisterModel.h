@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetworkManager.h"
 
-@interface RegisterModel : NSObject
+@interface RegisterModel : NSObject <NetworkManagerDelegate>
+
+- (instancetype)initRegisterModelWithResultBlock: (void(^)(BOOL, NSString *))rb;
+- (void)registerWithUserName: (NSString *)usn withPassword: (NSString *)psw;
 
 @end

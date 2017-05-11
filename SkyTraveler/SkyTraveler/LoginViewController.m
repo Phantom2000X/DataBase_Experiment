@@ -16,11 +16,18 @@
 @end
 
 @implementation LoginViewController
-
+{
+    LoginViewModel *loginViewModel;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_userNameTextField setDelegate:self];
     [_passwordTextField setDelegate:self];
+    loginViewModel = [[LoginViewModel alloc] initWithFailResultBlock:^(NSString * rs) {
+        [self loginFailWithReson:rs];
+    } successBlock:^{
+        [self performSegueWithIdentifier:@"LoginShow" sender:self];
+    }];
     // Do any additional setup after loading the view.
 }
 
@@ -36,7 +43,9 @@
 }
 
 - (void)loginAlertViewShowUp: (NSString *)str {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NULL message:str preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NULL
+                                                            message:str
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     [alertController presentingViewController];
 }
 
@@ -45,7 +54,12 @@
 }
 
 - (IBAction)LoginButtonTouch:(UIButton *)sender {
-    
+    [ShowUpAlert showLoadingAlertControllerWithController:self];
+    [loginViewModel loginWithUserName:_userNameTextField.text withPassword:_passwordTextField.text];
+}
+
+- (void)loginFailWithReson: (NSString *) rs{
+    [ShowUpAlert showWarningResultAlertControllerWithString:rs withViewController:self];
 }
 
 
