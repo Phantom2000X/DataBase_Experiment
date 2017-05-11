@@ -13,6 +13,8 @@
 		FF1ED3331EC44BF100E759DD /* TicketsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3321EC44BF100E759DD /* TicketsTableViewController.m */; };
 		FF1ED3361EC44C0900E759DD /* TicketsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3351EC44C0900E759DD /* TicketsViewModel.m */; };
 		FF1ED3391EC44C1400E759DD /* TicketsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3381EC44C1400E759DD /* TicketsModel.m */; };
+		FF1ED33C1EC44D8100E759DD /* TicketsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED33B1EC44D8100E759DD /* TicketsTableViewCell.m */; };
+		FF1ED33F1EC44F2E00E759DD /* TicketCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED33E1EC44F2E00E759DD /* TicketCellData.m */; };
 		FF25DB4B1EC1FA6A00CAB5F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4A1EC1FA6A00CAB5F3 /* main.m */; };
 		FF25DB4E1EC1FA6A00CAB5F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */; };
 		FF25DB511EC1FA6A00CAB5F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */; };
@@ -62,6 +64,10 @@
 		FF1ED3351EC44C0900E759DD /* TicketsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewModel.m; sourceTree = "<group>"; };
 		FF1ED3371EC44C1400E759DD /* TicketsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsModel.h; sourceTree = "<group>"; };
 		FF1ED3381EC44C1400E759DD /* TicketsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsModel.m; sourceTree = "<group>"; };
+		FF1ED33A1EC44D8100E759DD /* TicketsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsTableViewCell.h; sourceTree = "<group>"; };
+		FF1ED33B1EC44D8100E759DD /* TicketsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsTableViewCell.m; sourceTree = "<group>"; };
+		FF1ED33D1EC44F2E00E759DD /* TicketCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketCellData.h; sourceTree = "<group>"; };
+		FF1ED33E1EC44F2E00E759DD /* TicketCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketCellData.m; sourceTree = "<group>"; };
 		FF25DB461EC1FA6A00CAB5F3 /* SkyTraveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyTraveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF25DB4A1EC1FA6A00CAB5F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF25DB4C1EC1FA6A00CAB5F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 			children = (
 				FF1ED3311EC44BF100E759DD /* TicketsTableViewController.h */,
 				FF1ED3321EC44BF100E759DD /* TicketsTableViewController.m */,
+				FF1ED33A1EC44D8100E759DD /* TicketsTableViewCell.h */,
+				FF1ED33B1EC44D8100E759DD /* TicketsTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -165,6 +173,8 @@
 			children = (
 				FF1ED3341EC44C0900E759DD /* TicketsViewModel.h */,
 				FF1ED3351EC44C0900E759DD /* TicketsViewModel.m */,
+				FF1ED33D1EC44F2E00E759DD /* TicketCellData.h */,
+				FF1ED33E1EC44F2E00E759DD /* TicketCellData.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -574,12 +584,14 @@
 				FF25DB9A1EC2B7F800CAB5F3 /* RegisterModel.m in Sources */,
 				FF1ED3361EC44C0900E759DD /* TicketsViewModel.m in Sources */,
 				FF25DB881EC1FEDD00CAB5F3 /* WithLineTextField.m in Sources */,
+				FF1ED33C1EC44D8100E759DD /* TicketsTableViewCell.m in Sources */,
 				FF1ED32D1EC40AA600E759DD /* SearchModel.m in Sources */,
 				FF25DB8B1EC21FA400CAB5F3 /* LoginViewController.m in Sources */,
 				FF25DB971EC2B7E600CAB5F3 /* RegisterViewModel.m in Sources */,
 				FF25DB911EC2293800CAB5F3 /* LoginModel.m in Sources */,
 				FF801E001EC30DAE00FB0891 /* ShowUpAlert.m in Sources */,
 				FF1ED32A1EC40A9800E759DD /* SearchViewModel.m in Sources */,
+				FF1ED33F1EC44F2E00E759DD /* TicketCellData.m in Sources */,
 				FF25DB941EC2B7CE00CAB5F3 /* RegisterViewController.m in Sources */,
 				FF1ED3391EC44C1400E759DD /* TicketsModel.m in Sources */,
 			);

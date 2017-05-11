@@ -9,5 +9,21 @@
 #import "TicketsViewModel.h"
 
 @implementation TicketsViewModel
+{
+    void (^ticketsFinishLoadBlock)(void);
+    void (^finishedBuyTicketBlock)(void);
+}
+
+- (instancetype)initWithTicketsFinishLoadBlock:(void (^)(void))tflb finishedBuyTicketBlock:(void (^)(void))fbtb {
+    if (self = [super init]) {
+        ticketsFinishLoadBlock = tflb;
+        finishedBuyTicketBlock = fbtb;
+    }
+    return self;
+}
+
+- (void)searchForTicketsWithDepartTime:(NSString *)dpt departPlace:(NSString *)dpp arrivePlace:(NSString *)arvp {
+    
+}
 
 @end

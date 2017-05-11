@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TicketsViewModel.h"
 
 @interface TicketsTableViewController : UITableViewController
+
+@property (nonatomic , strong) NSString *departTime;
+@property (nonatomic , strong) NSString *departPlace;
+@property (nonatomic , strong) NSString *arrivePlace;
 
 @end

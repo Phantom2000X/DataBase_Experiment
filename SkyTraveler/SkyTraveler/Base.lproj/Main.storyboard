@@ -334,7 +334,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticketTableViewCell" id="4K7-2B-0Kh">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticketTableViewCell" id="4K7-2B-0Kh" customClass="TicketsTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4K7-2B-0Kh" id="B0F-hH-4wa">
@@ -430,6 +430,21 @@ MDgQOjAwA
                                         <constraint firstItem="JQq-YO-IXh" firstAttribute="top" secondItem="ikx-yJ-SNd" secondAttribute="bottom" constant="4" id="z2M-ZV-E2O"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="arrivePlace" destination="DYu-0j-hfN" id="MDN-Ww-vZf"/>
+                                    <outlet property="arrivePlaceLabel" destination="DYu-0j-hfN" id="3Fc-d3-mdU"/>
+                                    <outlet property="arriveTime" destination="pbR-Wc-Iz2" id="jAM-C8-hqR"/>
+                                    <outlet property="arrveTimeLabel" destination="pbR-Wc-Iz2" id="SdC-BE-oRD"/>
+                                    <outlet property="companyName" destination="JQq-YO-IXh" id="Mqs-14-URv"/>
+                                    <outlet property="companyNameLabel" destination="JQq-YO-IXh" id="YU5-5l-76f"/>
+                                    <outlet property="departPlace" destination="ikx-yJ-SNd" id="puC-r2-1hZ"/>
+                                    <outlet property="departPlaceLabel" destination="ikx-yJ-SNd" id="8we-xL-H85"/>
+                                    <outlet property="departTime" destination="qaQ-qS-tCa" id="r3z-4s-lap"/>
+                                    <outlet property="departTimeLabel" destination="qaQ-qS-tCa" id="cyb-4e-PHM"/>
+                                    <outlet property="priceLabel" destination="8HH-DN-4oB" id="A2m-Qu-NiJ"/>
+                                    <outlet property="seatRemain" destination="fcZ-3L-Lqd" id="UhO-EI-8Yi"/>
+                                    <outlet property="seatType" destination="bW5-Vr-Ffw" id="jsf-DH-gLO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

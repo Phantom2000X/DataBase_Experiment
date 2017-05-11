@@ -10,6 +10,13 @@
 
 @implementation TicketsModel
 
-
+- (void)searchForTicketsWithDepartTime:(NSString *)dpt departPlace:(NSString *)dpp arrivePlace:(NSString *)arvp {
+    NSDictionary *dic = @{
+                          @"Depart_Time" :dpt,
+                          @"Depart_Place":dpp,
+                          @"Arrive_Place":arvp
+                          };
+    [NetworkManager connectServerWithPathString:<#(NSString *)#> JSONDictionary:dic];
+}
 
 @end

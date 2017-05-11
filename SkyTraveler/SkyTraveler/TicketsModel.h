@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetworkManager.h"
 
 @interface TicketsModel : NSObject
+
+- (void)searchForTicketsWithDepartTime:(NSString *)dpt departPlace:(NSString *)dpp arrivePlace:(NSString *)arvp;
 
 @end
