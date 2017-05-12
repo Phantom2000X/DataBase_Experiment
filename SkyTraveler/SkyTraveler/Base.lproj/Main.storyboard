@@ -63,7 +63,10 @@
                                     <constraint firstAttribute="width" constant="130" id="i60-Zi-0gZ"/>
                                 </constraints>
                                 <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="登录"/>
+                                <state key="normal" title="注册"/>
+                                <connections>
+                                    <action selector="loginPress:" destination="IS8-Jk-beW" eventType="touchUpInside" id="qjh-yU-Lyy"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4UW-XW-F4g" customClass="WithLineTextField">
                                 <rect key="frame" x="62.5" y="316" width="250" height="35"/>
@@ -207,7 +210,7 @@
                         <viewControllerLayoutGuide type="top" id="ebl-0S-axl"/>
                         <viewControllerLayoutGuide type="bottom" id="fE6-vO-0sk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="iDO-3d-rkt">
+                    <view key="view" contentMode="scaleToFill" id="iDO-3d-rkt" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -219,7 +222,10 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="58n-Mm-jlA" eventType="editingDidEndOnExit" id="hEK-N7-soj"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="降落地点" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7w-Z3-TZy" customClass="WithLineTextField">
                                 <rect key="frame" x="87.5" y="336" width="200" height="35"/>
@@ -229,7 +235,10 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="58n-Mm-jlA" eventType="editingDidEndOnExit" id="qtN-uf-zFe"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-to-qJv">
                                 <rect key="frame" x="127.5" y="125" width="120" height="120"/>
@@ -248,7 +257,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="touchUpInsideDateTextField:" destination="58n-Mm-jlA" eventType="touchUpInside" id="2nF-8v-uAc"/>
+                                    <action selector="touchUpInsideDateTextField:" destination="58n-Mm-jlA" eventType="touchDown" id="3Ms-cm-Kiu"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFw-Z1-W4i">
@@ -258,6 +267,9 @@
                                     <constraint firstAttribute="height" constant="25" id="Wlf-bc-ie6"/>
                                 </constraints>
                                 <state key="normal" image="Switch"/>
+                                <connections>
+                                    <action selector="switchButtonPress:" destination="58n-Mm-jlA" eventType="touchUpInside" id="HPY-ww-VBc"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TakingOffPlace" translatesAutoresizingMaskIntoConstraints="NO" id="h0z-ho-y3w">
                                 <rect key="frame" x="53.5" y="290" width="26" height="26"/>
@@ -289,6 +301,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="搜素"/>
+                                <connections>
+                                    <action selector="searchButtonPress:" destination="58n-Mm-jlA" eventType="touchUpInside" id="DlU-jz-jPi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -312,6 +327,9 @@
                             <constraint firstItem="5Ri-zZ-Pb5" firstAttribute="centerX" secondItem="iDO-3d-rkt" secondAttribute="centerX" constant="17" id="xfR-Xg-A70"/>
                             <constraint firstItem="vOm-o5-Iwm" firstAttribute="top" secondItem="5Ri-zZ-Pb5" secondAttribute="bottom" constant="67" id="yHC-qk-vty"/>
                         </constraints>
+                        <connections>
+                            <action selector="touchView:" destination="58n-Mm-jlA" eventType="touchDown" id="Tnm-ul-ADU"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="yc3-aJ-hOg"/>
                     <connections>
@@ -460,10 +478,10 @@ MDgQOjAwA
             </objects>
             <point key="canvasLocation" x="3118" y="260"/>
         </scene>
-        <!--View Controller-->
+        <!--Complete View Controller-->
         <scene sceneID="dnk-qc-ce4">
             <objects>
-                <viewController id="45k-Ze-UDX" sceneMemberID="viewController">
+                <viewController id="45k-Ze-UDX" customClass="CompleteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dFn-tf-OSc"/>
                         <viewControllerLayoutGuide type="bottom" id="gOq-jU-RrG"/>
@@ -609,6 +627,20 @@ MDgQOjAwA
                             <constraint firstItem="xhw-Kb-5bE" firstAttribute="centerX" secondItem="6A9-Zy-Pbd" secondAttribute="centerX" id="iuX-V6-pRh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="arrivePlaceLabel" destination="58r-fq-a5G" id="710-8E-xqH"/>
+                        <outlet property="arriveTimeLabel" destination="TNV-Au-X7N" id="CB9-3v-joM"/>
+                        <outlet property="companyNameLabel" destination="BzH-gs-ZWu" id="iWK-au-eD6"/>
+                        <outlet property="departPlaceLabel" destination="NId-z2-9Cv" id="DpR-hg-Pw5"/>
+                        <outlet property="departTimeLabel" destination="avl-wo-mOC" id="uoH-sX-Ohd"/>
+                        <outlet property="pickupPlaceLabel" destination="x67-aB-Nn6" id="quQ-1Q-cJ6"/>
+                        <outlet property="pickupTimeLabel" destination="AeA-1A-Egf" id="Xbf-Rv-PQY"/>
+                        <outlet property="priceLabel" destination="T7P-Qg-IVT" id="kYB-au-GXq"/>
+                        <outlet property="seatRemainLabel" destination="vcU-GC-had" id="dYo-rP-8OI"/>
+                        <outlet property="seatTypeLabel" destination="aAt-Mb-2sn" id="KfX-ah-8HP"/>
+                        <outlet property="ticketIdLabel" destination="eyn-BW-iKG" id="jcb-vW-IVH"/>
+                        <outlet property="userNameLabel" destination="3Rm-BO-ZqF" id="FGe-Iu-8yN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bym-3k-ybt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -657,7 +689,7 @@ MDgQOjAwA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticketTableViewCell" id="3W0-9o-78e">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderedTicketTableViewCell" id="3W0-9o-78e" customClass="OrderedTicketTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3W0-9o-78e" id="sEW-rc-vtG">
@@ -716,10 +748,17 @@ MDgQOjAwA
                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2C-R4-qFS">
+                                            <rect key="frame" x="339" y="34" width="22" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="m45-Ht-egB" firstAttribute="leading" secondItem="NPJ-ol-pQD" secondAttribute="trailing" constant="19.5" id="1H5-Ue-lTb"/>
                                         <constraint firstItem="aw3-H7-q28" firstAttribute="leading" secondItem="sEW-rc-vtG" secondAttribute="leadingMargin" constant="6" id="4bx-BG-ZU9"/>
+                                        <constraint firstItem="0pu-RL-KNj" firstAttribute="top" secondItem="R2C-R4-qFS" secondAttribute="bottom" constant="1" id="5R7-sj-Y9M"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fUE-TY-rWO" secondAttribute="trailing" constant="6" id="BW0-3q-wwX"/>
                                         <constraint firstItem="iFi-h7-Rd3" firstAttribute="top" secondItem="NPJ-ol-pQD" secondAttribute="bottom" constant="4" id="Esm-Cp-wOv"/>
                                         <constraint firstItem="fSr-rY-DZa" firstAttribute="top" secondItem="sEW-rc-vtG" secondAttribute="topMargin" constant="1" id="HvP-zT-Snd"/>
@@ -730,12 +769,24 @@ MDgQOjAwA
                                         <constraint firstItem="iFi-h7-Rd3" firstAttribute="leading" secondItem="NPJ-ol-pQD" secondAttribute="leading" id="NoS-YA-49Z"/>
                                         <constraint firstItem="aw3-H7-q28" firstAttribute="top" secondItem="iFi-h7-Rd3" secondAttribute="bottom" constant="4" id="OkD-vv-CUe"/>
                                         <constraint firstItem="fUE-TY-rWO" firstAttribute="top" secondItem="sEW-rc-vtG" secondAttribute="topMargin" id="d2t-vw-MAN"/>
+                                        <constraint firstItem="R2C-R4-qFS" firstAttribute="top" secondItem="fUE-TY-rWO" secondAttribute="bottom" constant="2" id="hWw-5a-pgx"/>
                                         <constraint firstItem="0pu-RL-KNj" firstAttribute="top" secondItem="fUE-TY-rWO" secondAttribute="bottom" constant="24" id="hkK-3E-pYl"/>
                                         <constraint firstItem="0pu-RL-KNj" firstAttribute="trailing" secondItem="fUE-TY-rWO" secondAttribute="trailing" id="mMw-tj-URR"/>
                                         <constraint firstItem="NPJ-ol-pQD" firstAttribute="top" secondItem="sEW-rc-vtG" secondAttribute="topMargin" constant="1" id="nza-9f-3XD"/>
+                                        <constraint firstItem="R2C-R4-qFS" firstAttribute="trailing" secondItem="fUE-TY-rWO" secondAttribute="trailing" id="w06-vF-Thz"/>
                                         <constraint firstItem="NPJ-ol-pQD" firstAttribute="leading" secondItem="sEW-rc-vtG" secondAttribute="leadingMargin" constant="6" id="zwJ-Z5-Mq0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="arrivePlaceLabel" destination="eBH-Rb-Yc3" id="z8G-fe-AwV"/>
+                                    <outlet property="arriveTimeLabel" destination="fSr-rY-DZa" id="MSk-8t-pOd"/>
+                                    <outlet property="companyNameLabel" destination="aw3-H7-q28" id="v5W-Js-wFd"/>
+                                    <outlet property="departPlaceLabel" destination="iFi-h7-Rd3" id="6NU-iy-lEX"/>
+                                    <outlet property="departTimeLabel" destination="NPJ-ol-pQD" id="bpP-rS-3N0"/>
+                                    <outlet property="priceLabel" destination="fUE-TY-rWO" id="dOv-Rh-oAj"/>
+                                    <outlet property="seatNumberLabel" destination="R2C-R4-qFS" id="DRe-vf-O8T"/>
+                                    <outlet property="seatTypeLabel" destination="0pu-RL-KNj" id="Qpe-dg-miP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

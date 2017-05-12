@@ -9,8 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "NetworkManager.h"
 
-@interface TicketsModel : NSObject
+@interface TicketsModel : NSObject <NetworkManagerDelegate>
 
-- (void)searchForTicketsWithDepartTime:(NSString *)dpt departPlace:(NSString *)dpp arrivePlace:(NSString *)arvp;
+- (instancetype)initWithTicketsFinishLoadBlock:(void (^)(NSArray *))tflb
+                        finishedBuyTicketBlock:(void (^)(NSDictionary *))fbtb
+                                orderFailBlock:(void (^)(void))ofb;
+- (void)searchForTicketsWithDepartTime:(NSString *)dpt
+                           departPlace:(NSString *)dpp
+                           arrivePlace:(NSString *)arvp;
+- (void)orderTicketWithFlightId: (NSNumber *)fid
+                         seatId:(NSNumber *)sid;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA6605DB2A9BCC0F8703D30 /* libPods-SkyTraveller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACFE5F93D127CB1E334AA77 /* libPods-SkyTraveller.a */; };
 		FF1ED3261EC40A8100E759DD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3251EC40A8100E759DD /* SearchViewController.m */; };
 		FF1ED32A1EC40A9800E759DD /* SearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3291EC40A9800E759DD /* SearchViewModel.m */; };
 		FF1ED32D1EC40AA600E759DD /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED32C1EC40AA600E759DD /* SearchModel.m */; };
@@ -15,6 +16,13 @@
 		FF1ED3391EC44C1400E759DD /* TicketsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3381EC44C1400E759DD /* TicketsModel.m */; };
 		FF1ED33C1EC44D8100E759DD /* TicketsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED33B1EC44D8100E759DD /* TicketsTableViewCell.m */; };
 		FF1ED33F1EC44F2E00E759DD /* TicketCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED33E1EC44F2E00E759DD /* TicketCellData.m */; };
+		FF1ED3451EC466AB00E759DD /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3441EC466AB00E759DD /* CompleteViewController.m */; };
+		FF1ED34C1EC482D100E759DD /* ShareUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED34B1EC482D100E759DD /* ShareUserInfo.m */; };
+		FF1ED3521EC4845C00E759DD /* OrderedTicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3511EC4845C00E759DD /* OrderedTicketTableViewController.m */; };
+		FF1ED3551EC4848900E759DD /* OrderedTicketViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3541EC4848900E759DD /* OrderedTicketViewModel.m */; };
+		FF1ED3581EC484B300E759DD /* OrderedTicketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED3571EC484B300E759DD /* OrderedTicketModel.m */; };
+		FF1ED35B1EC4885C00E759DD /* OrderedTicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED35A1EC4885C00E759DD /* OrderedTicketTableViewCell.m */; };
+		FF1ED35E1EC4897400E759DD /* OrderedTicketCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1ED35D1EC4897400E759DD /* OrderedTicketCellData.m */; };
 		FF25DB4B1EC1FA6A00CAB5F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4A1EC1FA6A00CAB5F3 /* main.m */; };
 		FF25DB4E1EC1FA6A00CAB5F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */; };
 		FF25DB511EC1FA6A00CAB5F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */; };
@@ -52,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5ACFE5F93D127CB1E334AA77 /* libPods-SkyTraveller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyTraveller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650597203E272BFABBC7CF25 /* Pods-SkyTraveller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyTraveller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyTraveller/Pods-SkyTraveller.debug.xcconfig"; sourceTree = "<group>"; };
+		6E85A68F37B6C3CE4DAD1730 /* Pods-SkyTraveller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyTraveller.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyTraveller/Pods-SkyTraveller.release.xcconfig"; sourceTree = "<group>"; };
 		FF1ED3241EC40A8100E759DD /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		FF1ED3251EC40A8100E759DD /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		FF1ED3281EC40A9800E759DD /* SearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewModel.h; sourceTree = "<group>"; };
@@ -68,9 +79,22 @@
 		FF1ED33B1EC44D8100E759DD /* TicketsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsTableViewCell.m; sourceTree = "<group>"; };
 		FF1ED33D1EC44F2E00E759DD /* TicketCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketCellData.h; sourceTree = "<group>"; };
 		FF1ED33E1EC44F2E00E759DD /* TicketCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketCellData.m; sourceTree = "<group>"; };
+		FF1ED3431EC466AB00E759DD /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
+		FF1ED3441EC466AB00E759DD /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
+		FF1ED34A1EC482D100E759DD /* ShareUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareUserInfo.h; sourceTree = "<group>"; };
+		FF1ED34B1EC482D100E759DD /* ShareUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareUserInfo.m; sourceTree = "<group>"; };
+		FF1ED3501EC4845C00E759DD /* OrderedTicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedTicketTableViewController.h; sourceTree = "<group>"; };
+		FF1ED3511EC4845C00E759DD /* OrderedTicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedTicketTableViewController.m; sourceTree = "<group>"; };
+		FF1ED3531EC4848900E759DD /* OrderedTicketViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedTicketViewModel.h; sourceTree = "<group>"; };
+		FF1ED3541EC4848900E759DD /* OrderedTicketViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedTicketViewModel.m; sourceTree = "<group>"; };
+		FF1ED3561EC484B300E759DD /* OrderedTicketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedTicketModel.h; sourceTree = "<group>"; };
+		FF1ED3571EC484B300E759DD /* OrderedTicketModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedTicketModel.m; sourceTree = "<group>"; };
+		FF1ED3591EC4885C00E759DD /* OrderedTicketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedTicketTableViewCell.h; sourceTree = "<group>"; };
+		FF1ED35A1EC4885C00E759DD /* OrderedTicketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedTicketTableViewCell.m; sourceTree = "<group>"; };
+		FF1ED35C1EC4897400E759DD /* OrderedTicketCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedTicketCellData.h; sourceTree = "<group>"; };
+		FF1ED35D1EC4897400E759DD /* OrderedTicketCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedTicketCellData.m; sourceTree = "<group>"; };
 		FF25DB461EC1FA6A00CAB5F3 /* SkyTraveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyTraveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF25DB4A1EC1FA6A00CAB5F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF25DB4C1EC1FA6A00CAB5F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FF25DB4F1EC1FA6A00CAB5F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -100,9 +124,9 @@
 		FF25DB991EC2B7F800CAB5F3 /* RegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterModel.m; sourceTree = "<group>"; };
 		FF25DBA31EC2BD6100CAB5F3 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		FF25DBA41EC2BD6100CAB5F3 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
-		FF25DBA51EC2BD6100CAB5F3 /* NetworkManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManagerDelegate.h; sourceTree = "<group>"; };
 		FF801DFE1EC30DAE00FB0891 /* ShowUpAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowUpAlert.h; sourceTree = "<group>"; };
 		FF801DFF1EC30DAE00FB0891 /* ShowUpAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowUpAlert.m; sourceTree = "<group>"; };
+		FFD5B0191EC49F780065406A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA6605DB2A9BCC0F8703D30 /* libPods-SkyTraveller.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +155,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003A9E6E9806D0D23B792573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ACFE5F93D127CB1E334AA77 /* libPods-SkyTraveller.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E07E180C6AD00E0000884587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				650597203E272BFABBC7CF25 /* Pods-SkyTraveller.debug.xcconfig */,
+				6E85A68F37B6C3CE4DAD1730 /* Pods-SkyTraveller.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FF1ED3211EC40A4700E759DD /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +230,69 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		FF1ED3401EC465CA00E759DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3431EC466AB00E759DD /* CompleteViewController.h */,
+				FF1ED3441EC466AB00E759DD /* CompleteViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF1ED3411EC465D000E759DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1ED3421EC465DD00E759DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF1ED3461EC4692500E759DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3501EC4845C00E759DD /* OrderedTicketTableViewController.h */,
+				FF1ED3511EC4845C00E759DD /* OrderedTicketTableViewController.m */,
+				FF1ED3591EC4885C00E759DD /* OrderedTicketTableViewCell.h */,
+				FF1ED35A1EC4885C00E759DD /* OrderedTicketTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF1ED3471EC4692900E759DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3531EC4848900E759DD /* OrderedTicketViewModel.h */,
+				FF1ED3541EC4848900E759DD /* OrderedTicketViewModel.m */,
+				FF1ED35C1EC4897400E759DD /* OrderedTicketCellData.h */,
+				FF1ED35D1EC4897400E759DD /* OrderedTicketCellData.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1ED3481EC4692F00E759DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED3561EC484B300E759DD /* OrderedTicketModel.h */,
+				FF1ED3571EC484B300E759DD /* OrderedTicketModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF1ED3491EC482B800E759DD /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ED34A1EC482D100E759DD /* ShareUserInfo.h */,
+				FF1ED34B1EC482D100E759DD /* ShareUserInfo.m */,
+			);
+			name = UserInfo;
+			sourceTree = "<group>";
+		};
 		FF25DB3D1EC1FA6A00CAB5F3 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +300,8 @@
 				FF25DB621EC1FA6A00CAB5F3 /* SkyTravellerTests */,
 				FF25DB6D1EC1FA6A00CAB5F3 /* SkyTravellerUITests */,
 				FF25DB471EC1FA6A00CAB5F3 /* Products */,
+				E07E180C6AD00E0000884587 /* Pods */,
+				003A9E6E9806D0D23B792573 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,7 +322,7 @@
 				FF25DB9D1EC2B82800CAB5F3 /* OrderedTicket */,
 				FF25DB9B1EC2B81300CAB5F3 /* OrderTicket */,
 				FF25DB7C1EC1FB7400CAB5F3 /* LoginAndRegister */,
-				FF25DB4C1EC1FA6A00CAB5F3 /* AppDelegate.h */,
+				FFD5B0191EC49F780065406A /* AppDelegate.h */,
 				FF25DB4D1EC1FA6A00CAB5F3 /* AppDelegate.m */,
 				FF25DB4F1EC1FA6A00CAB5F3 /* ViewController.h */,
 				FF25DB501EC1FA6A00CAB5F3 /* ViewController.m */,
@@ -363,6 +470,9 @@
 		FF25DB9D1EC2B82800CAB5F3 /* OrderedTicket */ = {
 			isa = PBXGroup;
 			children = (
+				FF1ED3481EC4692F00E759DD /* Model */,
+				FF1ED3471EC4692900E759DD /* ViewModel */,
+				FF1ED3461EC4692500E759DD /* View */,
 			);
 			name = OrderedTicket;
 			sourceTree = "<group>";
@@ -390,6 +500,9 @@
 		FF25DBA01EC2B85400CAB5F3 /* Complete */ = {
 			isa = PBXGroup;
 			children = (
+				FF1ED3401EC465CA00E759DD /* View */,
+				FF1ED3411EC465D000E759DD /* ViewModel */,
+				FF1ED3421EC465DD00E759DD /* Model */,
 			);
 			name = Complete;
 			sourceTree = "<group>";
@@ -406,6 +519,7 @@
 		FF25DBA21EC2BCC300CAB5F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF1ED3491EC482B800E759DD /* UserInfo */,
 				FF25DBA71EC2BD6700CAB5F3 /* Network */,
 			);
 			name = Model;
@@ -416,7 +530,6 @@
 			children = (
 				FF25DBA31EC2BD6100CAB5F3 /* NetworkManager.h */,
 				FF25DBA41EC2BD6100CAB5F3 /* NetworkManager.m */,
-				FF25DBA51EC2BD6100CAB5F3 /* NetworkManagerDelegate.h */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -445,9 +558,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF25DB731EC1FA6A00CAB5F3 /* Build configuration list for PBXNativeTarget "SkyTraveller" */;
 			buildPhases = (
+				AAAC6FA16DDC613648944769 /* [CP] Check Pods Manifest.lock */,
 				FF25DB421EC1FA6A00CAB5F3 /* Sources */,
 				FF25DB431EC1FA6A00CAB5F3 /* Frameworks */,
 				FF25DB441EC1FA6A00CAB5F3 /* Resources */,
+				CEBFE76785B82E1B4B8D8139 /* [CP] Embed Pods Frameworks */,
+				1F644484EC9F458E91031AD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -569,24 +685,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F644484EC9F458E91031AD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyTraveller/Pods-SkyTraveller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAAC6FA16DDC613648944769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEBFE76785B82E1B4B8D8139 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyTraveller/Pods-SkyTraveller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF25DB421EC1FA6A00CAB5F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1ED35E1EC4897400E759DD /* OrderedTicketCellData.m in Sources */,
 				FF25DB511EC1FA6A00CAB5F3 /* ViewController.m in Sources */,
 				FF1ED3261EC40A8100E759DD /* SearchViewController.m in Sources */,
 				FF25DB4E1EC1FA6A00CAB5F3 /* AppDelegate.m in Sources */,
 				FF25DB8E1EC2292300CAB5F3 /* LoginViewModel.m in Sources */,
+				FF1ED3521EC4845C00E759DD /* OrderedTicketTableViewController.m in Sources */,
+				FF1ED34C1EC482D100E759DD /* ShareUserInfo.m in Sources */,
 				FF25DBA61EC2BD6100CAB5F3 /* NetworkManager.m in Sources */,
 				FF1ED3331EC44BF100E759DD /* TicketsTableViewController.m in Sources */,
 				FF25DB4B1EC1FA6A00CAB5F3 /* main.m in Sources */,
 				FF25DB9A1EC2B7F800CAB5F3 /* RegisterModel.m in Sources */,
+				FF1ED3451EC466AB00E759DD /* CompleteViewController.m in Sources */,
 				FF1ED3361EC44C0900E759DD /* TicketsViewModel.m in Sources */,
 				FF25DB881EC1FEDD00CAB5F3 /* WithLineTextField.m in Sources */,
 				FF1ED33C1EC44D8100E759DD /* TicketsTableViewCell.m in Sources */,
 				FF1ED32D1EC40AA600E759DD /* SearchModel.m in Sources */,
 				FF25DB8B1EC21FA400CAB5F3 /* LoginViewController.m in Sources */,
+				FF1ED3551EC4848900E759DD /* OrderedTicketViewModel.m in Sources */,
 				FF25DB971EC2B7E600CAB5F3 /* RegisterViewModel.m in Sources */,
 				FF25DB911EC2293800CAB5F3 /* LoginModel.m in Sources */,
 				FF801E001EC30DAE00FB0891 /* ShowUpAlert.m in Sources */,
@@ -594,6 +763,8 @@
 				FF1ED33F1EC44F2E00E759DD /* TicketCellData.m in Sources */,
 				FF25DB941EC2B7CE00CAB5F3 /* RegisterViewController.m in Sources */,
 				FF1ED3391EC44C1400E759DD /* TicketsModel.m in Sources */,
+				FF1ED3581EC484B300E759DD /* OrderedTicketModel.m in Sources */,
+				FF1ED35B1EC4885C00E759DD /* OrderedTicketTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,10 +913,12 @@
 		};
 		FF25DB741EC1FA6A00CAB5F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650597203E272BFABBC7CF25 /* Pods-SkyTraveller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B924RY6M34;
 				INFOPLIST_FILE = SkyTraveler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTraveller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -754,10 +927,12 @@
 		};
 		FF25DB751EC1FA6A00CAB5F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E85A68F37B6C3CE4DAD1730 /* Pods-SkyTraveller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B924RY6M34;
 				INFOPLIST_FILE = SkyTraveler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhesi.SkyTraveller;
 				PRODUCT_NAME = "$(TARGET_NAME)";

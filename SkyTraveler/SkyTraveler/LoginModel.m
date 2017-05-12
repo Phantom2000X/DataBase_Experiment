@@ -11,11 +11,15 @@
 @implementation LoginModel
 {
     void (^resultBlock)(BOOL, NSString *);
+    NetworkManager *networkManager;
+    ShareUserInfo *shareUserInfo;
 }
 
 - (instancetype)initLoginModelWithResultBlock: (void(^)(BOOL, NSString *))rb {
     if (self = [super init]) {
         resultBlock = rb;
+        networkManager = [NetworkManager networkManager];
+        shareUserInfo = [ShareUserInfo shareUserInfo];
     }
     return self;
 }
@@ -23,14 +27,23 @@
 - (void)loginWithUserName: (NSString *)usn withPassword: (NSString *)psw {
     NSDictionary *dictionary = @{
                                  @"Name" : usn,
-                                 @"Password" : psw
+                                 @"Password" : psw,
+                                 @"action" : @"signup"
                                  };
-    [NetworkManager connectServerWithPathString:@"" JSONDictionary: dictionary];
+    [networkManager connectServerWithPathString:@"" JSONDictionary:dictionary returnDataWithBlock:^(NSData *d) {
+        [self networkManagerReturnData:d];
+    }];
 }
 
 - (void)networkManagerReturnData:(NSData *)data {
+    NSLog(@"success123123");
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    
+    if ((int)jsonDictionary[@"Result"] == 19) {
+        [shareUserInfo setUserId:[NSNumber numberWithInt:(int)jsonDictionary[@"User_Id"]]];
+        resultBlock(YES ,@"");
+    } else {
+        resultBlock(NO, jsonDictionary[@"Result_Info"]);
+    }
 }
 
 

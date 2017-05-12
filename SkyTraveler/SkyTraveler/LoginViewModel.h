@@ -12,6 +12,6 @@
 @interface LoginViewModel : NSObject
 
 - (instancetype)initWithFailResultBlock:(void (^)(NSString *))frb successBlock:(void (^)(void))sb;
-- (void)loginWithUserName: (NSString *)usn withPassword: (NSString *)psw;
+- (void)loginWithUserName:(NSString *)usn withPassword:(NSString *)psw;
 
 @end

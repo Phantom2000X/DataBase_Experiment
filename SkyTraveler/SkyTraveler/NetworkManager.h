@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "NetworkManagerDelegate.h"
+#import <AFNetworking.h>
 
 @interface NetworkManager : NSObject
 
-+ (void)connectServerWithPathString:(NSString *)pt JSONDictionary: (NSDictionary *)dictionary;
+@property(nonatomic, strong) AFHTTPSessionManager *manager;
+
+
++ (instancetype)networkManager;
+- (void)connectServerWithPathString:(NSString *)pt JSONDictionary:(NSDictionary *)dictionary returnDataWithBlock: (void (^)(NSData *)) rDB;
 + (NSURL *)getImageURLWithString:(NSString *)str;
 
 @end

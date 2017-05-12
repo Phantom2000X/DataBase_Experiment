@@ -11,11 +11,13 @@
 @implementation RegisterModel
 {
     void (^resultBlock)(BOOL, NSString *);
+    NetworkManager *networkManager;
 }
 
 - (instancetype)initRegisterModelWithResultBlock: (void(^)(BOOL, NSString *))rb {
     if (self = [super init]) {
         resultBlock = rb;
+        networkManager = [NetworkManager networkManager];
     }
     return self;
 }
@@ -23,14 +25,22 @@
 - (void)registerWithUserName: (NSString *)usn withPassword: (NSString *)psw {
     NSDictionary *dictionary = @{
                                  @"Name" : usn,
-                                 @"Password" : psw
+                                 @"Password" : psw,
+                                 @"action" : @"login"
                                  };
-    [NetworkManager connectServerWithPathString:@"" JSONDictionary: dictionary];
+    [networkManager connectServerWithPathString:@"" JSONDictionary:dictionary returnDataWithBlock:^(NSData *d) {
+        [self networkManagerReturnData:d];
+    }];
 }
 
 - (void)networkManagerReturnData:(NSData *)data {
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    
+    if ((int)jsonDictionary[@"Result"] == 19) {
+        resultBlock(YES, @"");
+    } else {
+        resultBlock(NO, jsonDictionary[@"Result_Info"]);
+        NSLog(@"networkReturnData");
+    }
 }
 
 @end

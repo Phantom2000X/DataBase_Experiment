@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "WithLineTextField.h"
+#import "RegisterViewModel.h"
+#import "ShowUpAlert.h"
 
 @interface RegisterViewController : UIViewController <UITextFieldDelegate>
 

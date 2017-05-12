@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TicketsViewModel.h"
-
+#import "CompleteViewController.h"
+#import "ShowUpAlert.h"
+#import "TicketsTableViewCell.h"
 @interface TicketsTableViewController : UITableViewController
 
 @property (nonatomic , strong) NSString *departTime;

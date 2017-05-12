@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SearchViewModel.h"
 #import "WithLineTextField.h"
-
+#import "TicketsTableViewController.h"
 
 @interface SearchViewController : UIViewController
 

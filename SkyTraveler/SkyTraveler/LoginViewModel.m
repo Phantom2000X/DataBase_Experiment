@@ -26,13 +26,14 @@
     return self;
 }
 
-- (void)loginWithUserName: (NSString *)usn withPassword: (NSString *)psw {
+- (void)loginWithUserName:(NSString *)usn withPassword:(NSString *)psw {
     if ([usn length] == 0 || [usn length] > 12 || [psw length] < 6 || [psw length] > 12)  {
         failResultBlock(@"用户名不能为空或大于12位，密码不能小于6位或大于12位");
         return;
     }
     [loginModel loginWithUserName:usn withPassword:psw];
 }
+
 
 - (void)executeResuletWithIsSuccess: (BOOL) isc withResult: (NSString *)rs {
     if (isc) {

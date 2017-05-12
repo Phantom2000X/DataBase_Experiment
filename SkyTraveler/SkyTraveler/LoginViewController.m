@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import <AFNetworking.h>
+//#import <>
 
 @interface LoginViewController ()
 
@@ -21,12 +23,46 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    NSDictionary *dic = @{
+//                          @"action" :@"Login",
+//                          @"Username":@"asdf",
+//                          @"Password":@"sadfsadf"
+//                          };
+//    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic
+//                                                       options:NSJSONWritingPrettyPrinted
+//                                                         error: nil];
+//    [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST"
+//                                                  URLString:@"http://192.168.199.112:8080/Database_Experiment/MainServlet"
+//                                                 parameters:dic
+//                                                      error:nil];
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    
+//    
+//    NSDictionary *parameters = @{
+//                                 @"action":@"login",
+//                                 @"Name":@"asdf",
+//                                 @"Password":@"asdfasdf"
+//                                 };
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    
+//    [manager POST:@"http://192.168.199.112:8080/Database_Experiment/MainServlet" parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+//        
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSString *str = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//        NSLog(@"%@", str);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"asdf");
+//    }];
+//    
     [_userNameTextField setDelegate:self];
     [_passwordTextField setDelegate:self];
     loginViewModel = [[LoginViewModel alloc] initWithFailResultBlock:^(NSString * rs) {
         [self loginFailWithReson:rs];
     } successBlock:^{
-        [self performSegueWithIdentifier:@"LoginShow" sender:self];
+        [[self presentedViewController] dismissViewControllerAnimated:true completion:^{
+            [self performSegueWithIdentifier:@"LoginShow" sender:self];
+        }];
     }];
     // Do any additional setup after loading the view.
 }
@@ -54,8 +90,8 @@
 }
 
 - (IBAction)LoginButtonTouch:(UIButton *)sender {
-    [ShowUpAlert showLoadingAlertControllerWithController:self];
     [loginViewModel loginWithUserName:_userNameTextField.text withPassword:_passwordTextField.text];
+    [ShowUpAlert showLoadingAlertControllerWithController:self];
 }
 
 - (void)loginFailWithReson: (NSString *) rs{
